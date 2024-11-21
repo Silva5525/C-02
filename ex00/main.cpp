@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 22:15:48 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/19 15:17:24 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/19 17:11:47 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@
 /// initializes b to a in the copy constructor.
 /// initializes c to b in the copy assignment operator.
 /// on return it called the destructor for a, b and c.
+/// @note New in c++:
+/// operator = is a function that assigns the value of the right operand
+/// to the left operand. (check in Fixed.cpp)
 int	main(void)
 {
 	Fixed a;
