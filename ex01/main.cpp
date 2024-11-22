@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 22:15:48 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/21 18:57:09 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/22 16:57:12 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,8 @@
 /// prints the fixed point value of a, b, c and d.
 /// prints the integer value of a, b, c and d.
 /// @note New in c++:
+/// std::ostream is used to output the fixed point value of an object.
 /// @fn roundf() rounds the float value to the nearest integer value.
-/// @fn friend: makes it possible to access the private members of the class.
-/// so operator << can access the private members of the class.
 /// @fn operator<<: takes a output stream and the object you want to print.
 /// it returns an ostream& so you multiple chaning is possible.
 /// @fn convertFloat() check it in Fixed.cpp.

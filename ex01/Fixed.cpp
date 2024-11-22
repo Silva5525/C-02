@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 22:15:27 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/21 18:13:53 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/22 17:04:44 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,12 +104,17 @@ int Fixed::convertInt(void) const
 	return (fixedPointValue >> fractionalBits);
 }
 
-/// @brief Overloads the insertion operator to output a Fixed object.
-/// Outputs the floating-point representation of the fixed-point value
-/// by calling convertFloat(). This ensures a human-readable output
-/// that matches the expected behavior of a floating-point number.
-std::ostream& operator<<(std::ostream& out, const Fixed& fix)
+/// @brief printing method for the Fixed class.
+/// @note new in c++:
+/// std::ostream is used to output the fixed point value of the object.
+std::ostream& Fixed::print(std::ostream& out, const Fixed& fix)
 {
 	out << fix.convertFloat();
 	return (out);
+}
+
+/// @brief Overloads the insertion operator to output a Fixed object.
+std::ostream& operator<<(std::ostream& out, const Fixed& fix)
+{
+	return (Fixed::print(out, fix));
 }
