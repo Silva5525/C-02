@@ -6,18 +6,16 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 22:15:35 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/22 17:00:50 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/11/22 17:16:56 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
 # define FIXED_HPP
 
-# include <string>
 # include <iostream>
-# include <fstream>
-# include <utility>
 # include <cmath>
+# include <iomanip>
 
 /// @brief Fixed class that can store a fixed point value.
 /// @private fixedPointValue and fractionalBits.
