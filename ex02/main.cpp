@@ -6,7 +6,7 @@
 /*   By: wdegraf <wdegraf@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 22:15:48 by wdegraf           #+#    #+#             */
-/*   Updated: 2024/11/22 13:59:08 by wdegraf          ###   ########.fr       */
+/*   Updated: 2024/12/02 16:07:58 by wdegraf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,10 @@
 /// @fn .what() returns a C-style character string describing the general cause
 /// of the current error (the same string passed to the ctor).
 /// in this case it is "Division by zero".from the runtime_error function.
+/// @note New in C++:
+/// try-catch block for exception handling.
+/// IF the code runs without throwing an exception, the try block completes normally.
+/// IF an exception is thrown, the catch block prints the exception message.
 int main(void) 
 {
 	// Testing constructors
